@@ -1,0 +1,111 @@
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  background: lightblue;
+  font-size: 1.25rem;
+  font-family: "Press Start 2P", cursive;
+}
+
+.app-container {
+  margin: 0 auto;
+  max-width: 700px;
+  min-width: 320px;
+}
+
+.pager-container {
+  display: flex;
+  width: 100%;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background: white;
+}
+
+.pager-receiver {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 90%;
+  margin-top: 1em;
+  background: #283033;
+  color: #f8f8f8;
+}
+
+.pager-title {
+  margin: 0.5em 0;
+  padding: 0.25em 0;
+}
+
+.pager-received-message {
+  background: #9ec4b3;
+  color: #000000;
+  width: 90%;
+  margin: 0;
+  text-align: center;
+  padding: 0.75em 0;
+  margin-bottom: 0.5em;
+}
+
+/* ----- Sender Input Section ----- */
+
+.pager-sender {
+  width: 90%;
+  margin: 2em 0 1em 0;
+  background: #d9d9d9;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.sender-title {
+  margin: 0.5em 0;
+  padding: 0 0;
+}
+
+.sender-message {
+  background: #444444;
+  width: 90%;
+  margin: 0;
+  color: #f8f8f8;
+  text-align: center;
+  padding: 0.75em 0;
+}
+
+.numbers-grid {
+  display: grid;
+  grid-template: repeat(4, 1fr) / repeat(3, 1fr);
+  text-align: center;
+  justify-content: center;
+  width: 90%;
+  grid-gap: 7px;
+  margin-top: 0.5em;
+}
+
+.grid-item {
+  background: #f8f8f8;
+  padding: 1em 0;
+}
+
+button {
+  width: 90%;
+  font-size: 1.5rem;
+  padding: 0.75rem 0;
+  border: none;
+  font-family: "Press Start 2P", cursive;
+  text-transform: uppercase;
+}
+
+.reset-btn {
+  margin-top: 0.5em;
+  background: #be482a;
+  color: #f8f8f8;
+}
+
+.send-btn {
+  margin: 0.5em 0;
+  background: #3d9c7c;
+}
