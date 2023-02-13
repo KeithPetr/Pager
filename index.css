@@ -47,8 +47,11 @@ body {
   height: 50px;
   margin: 0;
   text-align: center;
-  padding: 0.75em 0;
+  padding: 0.75em 2em;
   margin-bottom: 0.5em;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
 }
 
 /* ----- Sender Input Section ----- */
@@ -74,7 +77,10 @@ body {
   margin: 0;
   color: #f8f8f8;
   text-align: center;
-  padding: 0.75em 0;
+  padding: 0.75em 2em;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
 }
 
 .numbers-grid {
