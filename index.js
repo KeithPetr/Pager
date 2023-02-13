@@ -13,6 +13,8 @@ numbersGridEl.addEventListener("click", function(e){
 
 function sendMessage() {
     receivedMessageEl.innerHTML = senderMessageEl.innerHTML
+    const audio = new Audio("sound/Notification.mp3");
+    audio.play();
 }
 
 function resetMessage() {
@@ -20,5 +22,8 @@ function resetMessage() {
     senderMessageEl.innerHTML = ""
 }
 
-sendBtn.addEventListener("click", sendMessage)
+sendBtn.addEventListener("click", function() {
+    setTimeout(sendMessage, 2000)
+    setTimeout(resetMessage, 10000)
+})
 resetBtn.addEventListener("click", resetMessage)
