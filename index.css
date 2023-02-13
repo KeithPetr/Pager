@@ -13,6 +13,7 @@ body {
   margin: 0 auto;
   max-width: 700px;
   min-width: 320px;
+  margin-top: 10em;
 }
 
 .pager-container {

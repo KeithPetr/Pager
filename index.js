@@ -24,6 +24,6 @@ function resetMessage() {
 
 sendBtn.addEventListener("click", function() {
     setTimeout(sendMessage, 2000)
-    setTimeout(resetMessage, 10000)
+    setTimeout(resetMessage, 8000)
 })
 resetBtn.addEventListener("click", resetMessage)
