@@ -92,6 +92,12 @@ body {
   padding: 1em 0;
 }
 
+.grid-item:hover {
+    cursor: pointer;
+    transform: translateY(2px);
+    background: lightcyan;
+}
+
 button {
   width: 90%;
   font-size: 1.5rem;
@@ -101,13 +107,26 @@ button {
   text-transform: uppercase;
 }
 
+button:hover {
+    cursor: pointer;
+    transform: translateY(2px);
+}
+
 .reset-btn {
   margin-top: 0.5em;
   background: #be482a;
   color: #f8f8f8;
 }
 
+.reset-btn:hover {
+    background: #f76565;
+}
+
 .send-btn {
   margin: 0.5em 0;
   background: #3d9c7c;
+}
+
+.send-btn:hover {
+    background: #6db926;
 }
