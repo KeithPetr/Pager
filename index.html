@@ -15,33 +15,34 @@
     <title>Pager</title>
   </head>
   <body>
-    <div class="app-container">
+    <div class="app-container" id="app-container">
       <div class="pager-container">
         <div class="pager-receiver">
           <p class="pager-title">Pager</p>
-          <div class="pager-received-message">1337</div>
+          <div class="pager-received-message" id="pager-received-message"></div>
         </div>
         <div class="pager-sender">
           <p class="sender-title">Phone</p>
-          <div class="sender-message">1337</div>
-          <div class="numbers-grid">
-            <div class="grid-item">1</div>
-            <div class="grid-item">2</div>
-            <div class="grid-item">3</div>
-            <div class="grid-item">4</div>
-            <div class="grid-item">5</div>
-            <div class="grid-item">6</div>
-            <div class="grid-item">7</div>
-            <div class="grid-item">8</div>
-            <div class="grid-item">9</div>
-            <div class="grid-item">*</div>
-            <div class="grid-item">0</div>
-            <div class="grid-item">#</div>
+          <div class="sender-message" id="sender-message"></div>
+          <div class="numbers-grid" id="numbers-grid">
+            <div class="grid-item" data-input="1">1</div>
+            <div class="grid-item" data-input="2">2</div>
+            <div class="grid-item" data-input="3">3</div>
+            <div class="grid-item" data-input="4">4</div>
+            <div class="grid-item" data-input="5">5</div>
+            <div class="grid-item" data-input="6">6</div>
+            <div class="grid-item" data-input="7">7</div>
+            <div class="grid-item" data-input="8">8</div>
+            <div class="grid-item" data-input="9">9</div>
+            <div class="grid-item" data-input="*">*</div>
+            <div class="grid-item" data-input="0">0</div>
+            <div class="grid-item" data-input="#">#</div>
           </div>
-          <button type="button" class="reset-btn">Reset</button>
-          <button type="button" class="send-btn">Send</button>
+          <button type="button" class="reset-btn" id="reset-btn">Reset</button>
+          <button type="button" class="send-btn" id="send-btn">Send</button>
         </div>
       </div>
     </div>
   </body>
+  <script src="index.js"></script> 
 </html>
