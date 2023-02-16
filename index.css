@@ -3,20 +3,27 @@
 }
 
 body {
-  margin: 0;
+  /* margin: 0; */
+  margin: 40px auto;
+  width: 500px;
   background: lightblue;
   font-size: 1.25rem;
   font-family: "Press Start 2P", cursive;
 }
 
-.app-container {
+/* .app-container {
   margin: 0 auto;
   max-width: 700px;
   min-width: 320px;
   margin-top: 4em;
-}
+} */
 
 .pager-container {
+  margin: 0 auto;
+  /* outline: 4px solid red; */
+  border-radius: 20px;
+  border: 4px solid black;
+  /* width: 500px; */
   display: flex;
   width: 100%;
   flex-direction: column;
@@ -101,7 +108,6 @@ body {
 
 .grid-item:hover {
     cursor: pointer;
-    transform: translateY(2px);
     background: lightcyan;
 }
 
@@ -116,7 +122,10 @@ button {
 
 button:hover {
     cursor: pointer;
-    transform: translateY(2px);
+}
+
+button:active, .grid-item:active {
+  transform: translateY(2px);
 }
 
 .reset-btn {
@@ -136,4 +145,10 @@ button:hover {
 
 .send-btn:hover {
     background: #6db926;
+}
+
+@media only screen and (max-width: 600px) {
+  .pager-container {
+    width: 80%;
+  }
 }

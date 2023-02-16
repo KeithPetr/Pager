@@ -15,12 +15,12 @@
     <title>Pager</title>
   </head>
   <body>
-    <div class="app-container" id="app-container">
+    <!-- <div class="app-container" id="app-container"> -->
       <div class="pager-container">
         <div class="pager-receiver">
           <p class="pager-title">Pager</p>
           <div class="pager-received-message" id="pager-received-message"></div>
-        </div>
+        </div><!--pager-receiver-->
         <div class="pager-sender">
           <p class="sender-title">Phone</p>
           <div class="sender-message" id="sender-message"></div>
@@ -37,12 +37,12 @@
             <div class="grid-item" data-input="*">*</div>
             <div class="grid-item" data-input="0">0</div>
             <div class="grid-item" data-input="#">#</div>
-          </div>
+          </div><!--numbers-grid-->
           <button type="button" class="reset-btn" id="reset-btn">Reset</button>
           <button type="button" class="send-btn" id="send-btn">Send</button>
-        </div>
-      </div>
-    </div>
+        </div><!--pager-sender-->
+      </div><!--pager-container-->
+    <!-- </div>app-container -->
   </body>
   <script src="index.js"></script> 
 </html>
